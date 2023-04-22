@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  li {
+    margin-left: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(252, 247, 247);
+    font-size: 1.5rem;
+    background: darkblue;
+  }
+  
+  header {
+    background-color: rgb(27, 145, 145) !important;
+  }
+
+  .header-text {
+    margin-right: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: rgb(247, 239, 239);
+    /* background-color: cornsilk; */
+}
+  /* .header-text {
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: rgb(208, 38, 38);
+  } */
+    

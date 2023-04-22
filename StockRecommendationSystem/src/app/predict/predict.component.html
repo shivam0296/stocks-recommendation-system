@@ -1,0 +1,32 @@
+<h1 align="center">Predict</h1>
+<div style="margin-top: 3in; margin-bottom: 3in;" *ngIf="showTicker">
+<form (ngSubmit)="onSubmit(predictForm)" #predictForm="ngForm">
+<table align="center">
+  <td><label for="ticker"> <h3>Ticker</h3></label></td>
+  <td><input type="text" id="ticker" name="ticker" required [(ngModel)]="ticker"></td>
+  <td><button type="submit">Predict</button></td>
+</table>
+</form>
+</div>
+
+<div style="margin-top: 3in; margin-bottom: 3in;" *ngIf="loading && data == null"><h1 align="center">Loading...</h1></div>
+<!-- <iframe src="C:/Users/Anirudh Sharma/Desktop/stock_forecast.html"> -->
+<!-- </iframe> -->
+<!-- <div [innerHTML]="htmlContent"></div> -->
+
+<div style="margin-top: 3in; margin-bottom: 3in;">
+<div *ngIf="data">
+  <h3 align="center">Stock Recommendation graph for {{ ticker }} is {{data.ticker}}</h3>
+  <ul>
+    <!-- <li *ngFor="let item of prediction">{{ item }}</li> -->
+    <li align="center">on the next page</li>
+    <!-- <li>{{ prediction.value }}</li> -->
+    <!-- <li>{{ prediction.prediction }}</li> -->
+  </ul>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>

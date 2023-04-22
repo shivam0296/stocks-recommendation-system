@@ -1,0 +1,50 @@
+<!-- <h1>Goals Component</h1> -->
+
+<h1 class="body" align="center">Goals</h1>
+<div *ngIf="showForm">
+<h2 class="body" align="center">Here's where you can set your financial goals and track your progress towards achieving them.</h2>
+<h2 class="body" align="center">Enter : Duration, Rate of Interest and principal</h2>
+<div style="margin-top: 2in; margin-bottom: 3in;" >
+<form (ngSubmit)="onSubmit(predictForm)" #predictForm="ngForm">
+<table align="center">
+    <tr class="p1">
+        <td><label for="capital"> <h3>Capital :-</h3></label></td>
+        <td><input type="text" id="capital" name="capital" required [(ngModel)]="capital"></td>
+        <td><h3>$</h3></td>
+        
+    </tr>
+    <tr class="p2">
+        <td><label for="roi"> <h3>Rate of Interest :-</h3></label></td>
+        <td><input type="text" id="roi" name="roi" required [(ngModel)]="roi"></td>
+        <td><h3>%</h3></td>
+    </tr>
+    <tr class="p3">
+        <td><label for="time"> <h3>Time :-</h3></label></td>
+        <td><input type="text" id="time" name="time" required [(ngModel)]="time"></td>
+        <td><h3>months</h3></td>      
+    </tr>
+    <tr>
+    <td></td><td><button type="submit">Predict</button></td>
+    </tr>
+</table>
+</form>
+</div>
+</div>
+
+<div>
+    <div style="margin-top: 4in; margin-bottom: 3in;" *ngIf="loading && data == null"><h1 align="center">Loading...</h1></div>
+</div>
+<div style="margin-top: 3in; margin-bottom: 3in;">
+    <div *ngIf="data">
+      <h3 align="center">Stock Recommendation graph for ${{ capital }},{{ roi }}% and {{ time }} months is {{data.ticker}}</h3>
+      <ul>
+        <!-- <li *ngFor="let item of prediction">{{ item }}</li> -->
+        <li align="center">on the next page</li>
+        <!-- <li>{{ prediction.value }}</li> -->
+        <!-- <li>{{ prediction.prediction }}</li> -->
+      </ul>
+    </div>
+</div>
+<br>
+<br>
+<br>

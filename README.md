@@ -22,9 +22,4 @@ Detailed steps for setting up and running the project.
 ## Future Scope
 Plans to enhance the model for safer investment recommendations and expanding market analysis scope.
 
-## Acknowledgements
-Thanks to the academic and development team for their contributions.
-
 For more detailed insights, refer to our [full project documentation](link-to-full-documentation).
-
-(Note: Replace `path/to/image.png` with the actual paths to the images extracted from the PDF and provide the link to your full documentation.)

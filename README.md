@@ -13,8 +13,8 @@ This project aims to provide stock recommendations by combining stock price pred
 - Natural Language Processing: VADER Sentiment Analysis
 - Data Sources: SP 500 company stocks, Twitter, Financial News
 
-![Predictive Analysis](path/to/predictive_analysis_image.png)
-![Sentiment Analysis](path/to/sentiment_analysis_image.png)
+![Website](https://i.imgur.com/fzvgR9K.png)
+![Analysis](https://i.imgur.com/O1BuGAs.png)
 
 ## Installation and Running
 Detailed steps for setting up and running the project.

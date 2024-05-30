@@ -12,6 +12,7 @@ This project aims to provide stock recommendations by combining stock price pred
 - Machine Learning: ARIMA, LSTM
 - Natural Language Processing: VADER Sentiment Analysis
 - Data Sources: SP 500 company stocks, Twitter, Financial News
+- Frontend with Angular
 
 ![Website](https://i.imgur.com/fzvgR9K.png)
 ![Analysis](https://i.imgur.com/O1BuGAs.png)
